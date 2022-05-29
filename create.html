@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>19Lys Tool</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tailwindcss/ui@latest/dist/tailwind-ui.min.css"
+    />
+  </head>
+  <body class="bg-gray-200">
+    <div class="flex items-center justify-center min-h-screen">
+      <section
+        class="w-full max-w-lg px-8 py-6 mx-auto bg-white rounded-lg shadow-xl"
+      >
+        <h1 class="text-3xl font-bold text-center">Add Data Image</h1>
+        <form class="mt-6 items-center justify-center">
+          <label class="uppercase text-sm font-bold opacity-70" for="url"
+            >Image URL</label
+          >
+          <input
+            class="p-3 mt-2 mb-4 w-full bg-slate-200 rounded border-2 border-slate-200 focus:border-slate-600 focus:outline-none"
+            type="text"
+            name="url"
+            required
+            placeholder="Paste image url here"
+          />
+          <!-- <textarea name="body" required placeholder="Blog body"></textarea> -->
+          <label class="uppercase text-sm font-bold opacity-70" for="direction"
+            >Choose direction</label
+          >
+          <select
+            name="direction"
+            class="w-full p-3 mt-2 mb-4 w-full bg-slate-200 rounded border-2 border-slate-200 focus:border-slate-600 focus:outline-none"
+          >
+            <option value="portrait">Portrait</option>
+            <option value="landscape">Landscape</option>
+          </select>
+          <button
+            class="py-2 px-6 text-center bg-green-400 text-white font-medium rounded hover:bg-green-500 cursor-pointer ease-in-out duration-150"
+          >
+            Add
+          </button>
+        </form>
+      </section>
+    </div>
+
+    <script src="js/create.js"></script>
+  </body>
+</html>

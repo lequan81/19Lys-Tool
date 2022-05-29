@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+/* base styles */
+body {
+  background: #eeeeee;
+  font-family: 'Roboto';
+  color: #444444;
+  max-width: 960px;
+  margin: 100px auto;
+  padding: 10px;
+}
+h1, h2, h3, p, span {
+  font-family: 'Roboto';
+}
+h1 {
+  font-size: 24px;
+}
+button, input, select {
+  cursor: pointer;
+  outline: none;
+}
+button {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  background: #36cca2;
+  padding: 10px;
+  border-radius: 10px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav h1 {
+  margin: 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  background: #36cca2;
+  padding: 10px;
+  border-radius: 10px;
+}
+.text-field {
+  position: relative;
+}
+
+.text-field label {
+  display: inline-block;
+  font-weight: 600;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  background-color: #323a46;
+  padding: 1px 5px;
+  font-size: 12px;
+  transform: translateY(-50%);
+  color: #36cca2;
+}
+
+.text-field input {
+  padding: 15px;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid #36cca2;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+}
+
+.select {
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+}
+
+select,
+.select:after {
+  grid-area: select;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--select-arrow);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  justify-self: end;
+}
+
+form {
+  max-width: 600px;
+}
+input, textarea {
+  display: block;
+  margin: 16px 0;
+  padding: 6px 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-family: 'Roboto';
+}
+textarea {
+  min-height:200px;
+}
+
+/* post list */
+.post {
+  padding: 16px;
+  background: white;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+.post h2 {
+  margin: 0;
+}
+.post p {
+  margin-top: 0;
+}
+.post a {
+  color: #36cca2;
+}
