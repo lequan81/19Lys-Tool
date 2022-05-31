@@ -9,7 +9,7 @@ const createPost = async (e) => {
     direction: form.direction.value,
   }
 
-  await fetch('http://localhost:3001/imgs', {
+  await fetch('/imgs', {
     method: 'POST',
     body: JSON.stringify(doc),
     headers: { 'Content-Type': 'application/json' }

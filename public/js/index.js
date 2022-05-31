@@ -4,7 +4,7 @@ const searchForm = document.querySelector('.search');
 
 const renderPosts = async (term) => {
   console.log(term);
-  let uri = 'http://localhost:3001/imgs?_sort=id';
+  let uri = '/imgs?_sort=id';
   if (term) {
     uri += `&q=${term}`
   }

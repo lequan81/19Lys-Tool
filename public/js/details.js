@@ -4,7 +4,7 @@ const container = document.querySelector('.details');
 const deleteBtn = document.querySelector('.delete');
 
 const renderDetails = async () => {
-  const res = await fetch('http://localhost:3001/imgs/' + id);
+  const res = await fetch('/imgs/' + id);
   if (!res.ok) {
     window.location.replace("/");
   }
