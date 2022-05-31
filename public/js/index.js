@@ -19,7 +19,7 @@ const renderPosts = async (term) => {
     <div class="text-center mt-6 mx-8 p-6 sm:py-6 rounded-lg shadow-xl bg-white">
       <h2 class="text-xl text-gray-700 font-bold mb-2">${post.url}</h2>
         <p class="text-lg text-gray-400 font-normal">${post.direction}</p>
-        <a href="/details?id=${post.id}" class="text-green-500 no-underline font-semibold">
+        <a href="/details.html?id=${post.id}" class="text-green-500 no-underline font-semibold">
           Read more
         </a>
     </div>

@@ -19,7 +19,7 @@ const renderDetails = async () => {
 }
 
 deleteBtn.addEventListener('click', async () => {
-  const res = await fetch('http://localhost:3001/imgs/' + id, {
+  const res = await fetch('/imgs/' + id, {
     method: 'DELETE'
   });
   window.location.replace("/");
