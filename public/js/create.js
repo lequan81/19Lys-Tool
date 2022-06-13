@@ -71,7 +71,11 @@ const createPost = async (e) => {
         </button>
       </div>
     `;
-  }
+
+    setTimeout(() => {
+      window.location.replace('/');
+    }, 4000);
+  };
 }
 
 form.addEventListener('submit', createPost);
