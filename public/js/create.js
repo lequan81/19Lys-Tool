@@ -30,7 +30,7 @@ const createPost = async (e) => {
     console.log('ok');
     message.innerHTML = `
     <div
-        class="flex p-4 bg-green-100 rounded-lg dark:bg-green-200"
+        class="flex py-4 px-4 bg-green-100 rounded-lg dark:bg-green-200"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
